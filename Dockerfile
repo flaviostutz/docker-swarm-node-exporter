@@ -1,6 +1,6 @@
 FROM prom/node-exporter:v0.14.0
 
-ENV NODE_ID=none
+ENV NODE_ID ""
 
 USER root
 
