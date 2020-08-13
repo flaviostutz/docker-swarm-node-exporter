@@ -12,7 +12,7 @@ version: '3.5'
 
 services:
   node-exporter:
-    image: flaviostutz/docker-swarm-node-exporter:v0.14.0
+    image: flaviostutz/docker-swarm-node-exporter
     environment:
       - NODE_ID={{.Node.ID}}
     volumes:
