@@ -1,10 +1,11 @@
-FROM prom/node-exporter:v1.0.1
+# FROM prom/node-exporter:v1.0.1
+FROM prom/node-exporter:v0.16.0
 
 ENV NODE_ID ""
 
 USER root
 
-COPY entrypoint.sh /
+COPY startup.sh /
 
-ENTRYPOINT  [ "/entrypoint.sh" ]
-CMD [ "/bin/node_exporter" ]
+ENTRYPOINT  [ "/startup.sh" ]
+# CMD [ "/startup.sh" ]
